@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,
+html{
+    height: 100%;
+}
+.swiper-container {
+    width: 500px;
+    height: 300px;
+}  
+.swiper-slide{
+    background-image: url(../img/11201.jpg);
+    
+    height: 312px;
+}
+.s1{
+    background-color: red;
+}
+.s2{
+    background-color: aqua;
+}
+.s3{
+    background-color: forestgreen;
+}
