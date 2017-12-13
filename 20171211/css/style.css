@@ -1,0 +1,201 @@
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.swiper-button-next{
+    position: absolute;
+    top: auto;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -13.5px;
+    transform: rotate(-90deg);
+    animation: dong 1s linear infinite;
+}
+
+.swiper-slide{
+    background-image: url(../img/bj.png);
+    width: 100%;
+    
+} 
+.s1_top_img{
+    width: 100%;
+    position: absolute;
+    top: -10px;
+
+}
+
+
+.zuo{
+    position: relative;
+    left: 20%;   
+    
+}
+.zuo1{
+     position: relative;
+    right: 10%;
+}
+.zuo2{
+     position: relative;
+     right: 10%;
+     top: -60px;
+}
+.s1_center_img{
+    width: 100%;
+}
+.s1_bottom_img{
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+.s1_bottom_img img{
+    width: 110%;
+}
+.s2_center_img{
+    position: absolute;
+    left: 0px;
+}
+.s3_top_img img{
+    width: 100%;
+}.s3_bottom_img img{
+    width: 100%;
+}
+.s3_top_img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.s3_bottom_img{
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+.s3_center_img img{
+    position: relative;
+    bottom: -120px;
+    left: 1%;
+}
+.s3_center_img div p{
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+}
+.s4_center_img div p{
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+}
+
+.s4_center_img img{
+    position: relative;
+    bottom: -53px;
+    left: 1%;
+}
+
+.biankuang{
+    position: absolute;
+    left: 0px;
+    background-image: url(../img/biankuang.png);
+    width: 250px;
+    height: 326px;
+}
+.s5_center_img div p{
+    font-size: 14px;
+    width: 68%;
+    margin: auto;
+}
+.hua img{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.qiangjiao img{
+    position: absolute;
+    right: -98px;
+    top: 2px;
+}
+
+
+.gif{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.off{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    animation: chat 1s linear infinite;
+}
+
+@keyframes chat{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.music{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.s2_center_img img{
+    float: left;
+}
+.s2_center_img p{
+    font-size: 14px;
+    width: 80%;    
+}
+
+
+
+@keyframes dong{
+    0%{
+        position: absolute;
+        bottom: 2%;
+    }
+    100%{
+        position: absolute;
+        bottom: 6%;
+        opacity: 0;
+    }
+}
