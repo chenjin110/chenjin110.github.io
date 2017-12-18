@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width,
+     initial-scale=1.0,
+     user-scalable=no,
+     maximum-scale=1.0,
+     minimum-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+    <div class="swiper-container">
+         
+        <div class="swiper-wrapper">
+           
+            <div class="swiper-slide s1">Slide 1</div>
+            <div class="swiper-slide s2 ">Slide 2</div>
+            <div class="swiper-slide s3">Slide 3</div>
+            
+        </div>
+     <div class="swipe-handler"><div>你只能拖动这里</div></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <audio src="music.mp3" autoplay="autoplay"></audio>
+    <script src="js/swiper.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            //direction: 'vertical',   
+            speed: 300, //滑动速度
+            initialSlide: 0, //设置为2后，Swiper初始化时activeSlide成了第三个
+            pagination: {
+                el: ".swiper-pagination"
+                , clickable: "true"
+            , }
+            , navigation: {
+                  nextEl: '.swiper-button-next'
+                , prevEl: '.swiper-button-prev'
+            , },
+            loop:true,//环路
+             autoplay:{delay: 5000,},//自动切换
+            //effect:"flip",
+           
+            swipeHandler : '.swipe-handler',
+        })
+    </script>
+</body>
+</html>
