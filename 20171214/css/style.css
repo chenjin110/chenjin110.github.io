@@ -452,3 +452,21 @@ width: 60%;
         transform: rotate(360deg);
     }
 }
+
+@media(max-width:320px){
+    .swiper-slide{
+        font-size: 15px;
+    }
+    .s2zi{
+        font-size: 12px;
+    }
+    .s2_top_img div{
+        font-size: 19px;
+    }
+    .s3z{
+        font-size: 19px;
+    }
+    .s4z{
+        font-size: 19px;
+    }
+}    
