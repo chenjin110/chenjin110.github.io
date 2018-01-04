@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="img/1471860864.png" alt=""> </div>
+        <div class="sou">
+            <input type="text" placeholder="请输入关键字"> <img src="img/sou.png" alt=""> </div>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        
+    </div>
+    
+    <div class="main">
+        <h2>一一商品分类一一</h2>
+        <p><a href="#">紫外线鉴定手电</a></p>
+        <p><a href="#">玉石鉴定手电</a></p>
+        <p><a href="#">巡逻安防手电</a></p>
+        <p><a href="#">战术强光手电</a></p>
+        <p><a href="#">户外搜索手电</a></p>
+        <p><a href="">匀光勘察手电</a></p>
+        <p><a href="">迷你礼品手电</a></p>
+        <p><a href="">医用便携手电</a></p>
+        <p><a href="">防爆摄像手电</a></p>
+        <p><a href="">专业潜水手电</a></p>
+        <p><a href="">钓鱼灯手电筒</a></p>
+        <p><a href="">LED自行车灯</a></p>
+    </div>
+    
+    <div class="new">
+        <h2>一一新品上市一一</h2>
+        <div class="img"><img src="img/4.jpg" alt="">
+        <img src="img/5.jpg" alt="">
+        <img src="img/6.jpg" alt="">
+        <img src="img/7.jpg" alt="">
+        <img src="img/8.jpg" alt="">
+        <img src="img/9.jpg" alt="">
+        </div>
+        <div class="anniu"><input type="submit" value="了解更多"></div>
+        
+    </div>
+    <div class="new" style="margin-bottom: 70px;">
+        <h2>一一主要宝贝一一</h2>
+        <div class="img"><img src="img/4.jpg" alt="">
+        <img src="img/46.jpg" alt="">
+        <img src="img/50.jpg" alt="">
+        <img src="img/47.jpg" alt="">
+        <img src="img/48.jpg" alt="">
+        <img src="img/49.jpg" alt="">
+        </div>
+        <div class="anniu"><input type="submit" value="了解更多"></div>
+        
+    </div>
+    <div class="div-img new"><h2>一一代言人一一</h2><img src="img/52.jpg" alt=""></div>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="in.html"><img src="img/zhu.png" alt=""><p>主页</p></a></li>
+                <li><a href="detail.html"><img src="img/chan.png" alt=""><p>产品</p></a></li>
+                <li><a href="xiang.html"><img src="img/chan.png" alt=""><p>详情</p></a></li>
+                <li><a href="zhuce.html"><img src="img/wo.png" alt=""><p>我</p></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fontSizeSet.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1
+            , spaceBetween: 30
+            , loop: true
+            , pagination: {
+                el: '.swiper-pagination'
+                , clickable: true
+            , }
+            , navigation: {
+                nextEl: '.swiper-button-next'
+                , prevEl: '.swiper-button-prev'
+            , }
+        , });
+    </script>
+</body>
+</html>
