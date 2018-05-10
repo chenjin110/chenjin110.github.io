@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css"> </head>
+
+<body>
+    <header>
+        <div class="w">
+            <div class="top">
+                <div class="top-logo"> <img src="img/logo.png" alt=""> </div>
+                <div class="top-right">
+                    <ul>
+                        <li><a href="index.html">返回首页</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">服务热线：4000-800-333</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="w">
+            <div class="left"> <img src="img/100011_20180307164329891.png" alt=""> </div>
+            <div class="right">
+                <div class="right2" style="margin-top:0;">
+                    <div class="title">
+                        <p align="center" style="margin: 0; line-height: 36px; font-size: 16px; font-weight: bold;">用户注册</p>
+                    </div>
+                    <div class="register-form">
+                        <form action="Login.html" onsubmit="return form()" id="form">
+                            <div class="user">
+                                <input id="user" type="text" placeholder="用户名">
+                                <p></p>
+                            </div>
+                            <div class="password">
+                                <input id="password" type="password" placeholder="密码">
+                                <p></p>
+                            </div>
+                            <div class="code">
+                                <input id="code" type="text" placeholder="请输入验证码" maxlength="4">
+                                <p></p>
+                                <input id="getCode" type="button" value="获取验证码"> </div>
+                            <div class="check">
+                                <input type="checkbox" id="check">阅读协议 </div>
+                            <div class="zhu">
+                                <input type="submit" value="注册"> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js-footer" style="font-family:Microsoft YaHei;background: white;text-align: center;font-size: 12px;">
+        <div class="css-copyright-container"> © 2017 www.yatang.cn All rights reserved.<a>&nbsp;川B2-20170213</a> 雅堂电商&nbsp;<a>蜀ICP备16027647号-2</a> </div>
+    </div>
+    <!-- JavaScript -->
+    <!--        <script src="js/main.min.js"></script>-->
+    <script>
+        function f(e, t) {
+            var n = e.nextElementSibling;
+            n.innerHTML = t
+        }
+
+        function m(e, t) {
+            var n = e.nextElementSibling;
+            n.innerHTML = t
+        }
+
+        function b() {
+            var e = code.nextElementSibling;
+            return "" === code.value ? (e.innerHTML = "验证码不能为空", !1) : code.value != yzm ? (e.innerHTML = "验证码不符", !1) : (e.innerHTML = "验证通过", !0)
+        }
+
+        function form() {
+            return 1 != b() ? (alert("验证码输入有误"), !1) : 1 == c()
+        }
+
+        function c() {
+            return check.checked !== !1 || (alert("请勾选用户协议"), !1)
+        }
+        var user = document.querySelector("#user");
+        user.addEventListener("focus", function () {
+            f(this, "支持字母，数字的2-18个字符")
+        });
+        var password = document.querySelector("#password");
+        password.addEventListener("focus", function () {
+            f(this, "建议使用字母，数字的长度6-18个字符")
+        });
+        var code = document.querySelector("#code");
+        code.addEventListener("focus", function () {
+            f(this, "请输入验证码")
+        });
+        var getCode = document.querySelector("#getCode")
+            , yzm, time = 5
+            , t;
+        getCode.addEventListener("click", function () {
+            yzm = Math.floor(9e3 * Math.random() + 1e3), alert("验证码为:" + yzm), t = setInterval(function () {
+                time > 0 ? (getCode.value = time, getCode.disabled = "disabled", time--) : (clearInterval(t), getCode.value = "获取验证码", getCode.disabled = "")
+            }, 1e3)
+        }), code.addEventListener("blur", function () {
+            b()
+        });
+        var check = document.querySelector("#check");
+    </script>
+</body>
+
+</html>

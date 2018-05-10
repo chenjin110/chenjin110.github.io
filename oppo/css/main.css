@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/*! 盛邦升华 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f4f4f4;
+  font-family: "方正悠黑 512B W","PingFang SC","Microsoft YaHei","Helvetica Neue",Helvetica,Arial; }
+
+header .container .row .col-md-4 {
+  line-height: 60px; }
+  header .container .row .col-md-4 img {
+    width: 120px; }
+
+header .container .row .col-md-8 ul li {
+  float: left;
+  width: 100px;
+  line-height: 60px;
+  list-style: none; }
+  header .container .row .col-md-8 ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; }
+  header .container .row .col-md-8 ul li a:hover {
+    color: #ccc; }
+
+.clear::after {
+  clear: both;
+  content: "";
+  display: flex; }
+
+.main .main-banner ul li {
+  margin-top: 10px;
+  float: left;
+  width: 49%;
+  margin-left: 10px; }
+  .main .main-banner ul li img {
+    width: 100%; }
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  footer .container .row {
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc; }
+    footer .container .row .col-md-2 ul li {
+      margin-top: 10px;
+      list-style: none; }
+    footer .container .row .col-md-4 .col-md-6 img {
+      width: 160px; }
+    footer .container .row .col-md-4 .col-md-6 p {
+      font-size: 18px;
+      float: right;
+      margin-top: 10px; }
+    footer .container .row .col-md-4 .col-md-6 div {
+      float: right; }
+  footer .container .col-md-8 p {
+    color: #b7b4b4; }
+  footer .container .col-md-4 p {
+    color: #b7b4b4;
+    float: left; }
+
+.pin-banner div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative; }
+  .pin-banner div img {
+    width: 100%; }
+  .pin-banner div .banner-1 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-align: center; }
+    .pin-banner div .banner-1 h1 {
+      font-weight: bold; }
+    .pin-banner div .banner-1 p {
+      font-size: 18px; }
+    .pin-banner div .banner-1 button {
+      border: 0;
+      width: 130px;
+      height: 36px;
+      background-color: #05b570;
+      border-radius: 20px;
+      color: #fff; }
+    .pin-banner div .banner-1 button:hover {
+      background-color: #048c57; }
+  .pin-banner div .banner-2 {
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    text-align: center; }
+    .pin-banner div .banner-2 h1 {
+      font-weight: bold; }
+    .pin-banner div .banner-2 p {
+      font-size: 18px; }
+    .pin-banner div .banner-2 div a {
+      border-radius: 20px;
+      color: #fff;
+      font-size: 16px; }
+  .pin-banner div .banner-22 {
+    color: #000; }
+    .pin-banner div .banner-22 a:hover {
+      color: #000; }
+
+.main-banner {
+  position: relative;
+  margin-top: 100px; }
+  .main-banner .banner-top .main-div img {
+    width: 100%; }
+  .main-banner .banner-top .main-div .jg {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    text-align: center;
+    color: #fff; }
+    .main-banner .banner-top .main-div .jg a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      width: 148px;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 20px;
+      background-color: #05b570;
+      margin: 0 auto; }
+  .main-banner .banner-top .main-div1 {
+    position: relative;
+    margin-top: 50px; }
+    .main-banner .banner-top .main-div1 img {
+      width: 100%; }
+    .main-banner .banner-top .main-div1 .jg {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      text-align: center;
+      color: #fff; }
+      .main-banner .banner-top .main-div1 .jg a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        width: 148px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 20px;
+        background-color: #05b570;
+        margin: 0 auto; }
+
+.main-z ul li {
+  height: 550px;
+  background-color: #fff;
+  margin-top: 30px;
+  float: left;
+  width: 49%;
+  list-style: none; }
+  .main-z ul li img {
+    float: left;
+    width: 100%; }
+  .main-z ul li .div {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold; }
+  .main-z ul li a {
+    color: #000; }
+
+.main-center {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  .main-center ul li {
+    width: 24%;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px; }
+    .main-center ul li img {
+      width: 100%; }
+    .main-center ul li a {
+      color: #000; }
+
+.clear::after {
+  display: flex;
+  clear: both;
+  content: ""; }
+
+.ti-main {
+  position: relative; }
+  .ti-main .ti-bj img {
+    width: 100%; }
+  .ti-main .ti-bj .ti-zi {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    text-align: center;
+    color: #fff; }
+    .ti-main .ti-bj .ti-zi .ste-searchfeild input {
+      width: 700px;
+      height: 40px;
+      border-radius: 5px;
+      outline: 0; }
+    .ti-main .ti-bj .ti-zi .ste-searchlink {
+      margin-top: 30px; }
+      .ti-main .ti-bj .ti-zi .ste-searchlink a {
+        color: #fff;
+        font-size: 16px; }
+
+@media (max-width: 1024px) {
+  .ti-main .ti-bj .ti-zi {
+    left: 21%; } }
+
+.banner-1 {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .banner-1 .col-md-12 {
+    margin-top: 50px;
+    text-align: center; }
+    .banner-1 .col-md-12 h1 {
+      font-weight: 600; }
+    .banner-1 .col-md-12 p {
+      margin-top: 20px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc; }
+      .banner-1 .col-md-12 p a {
+        color: #000;
+        font-size: 15px; }
+  .banner-1 .col-md-4 {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+.banner-2 .col-md-12 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff; }
+  .banner-2 .col-md-12 .col-md-4 {
+    background-color: #fff; }
+    .banner-2 .col-md-12 .col-md-4 h3 {
+      padding-top: 30px; }
+    .banner-2 .col-md-12 .col-md-4 p {
+      font-size: 16px; }
+    .banner-2 .col-md-12 .col-md-4 a {
+      display: block;
+      padding-bottom: 40px; }
+  .banner-2 .col-md-12 .col-md-8 img {
+    width: 100%; }
+
+@media (max-width: 1024px) {
+  .banner-2 .col-md-12 .col-md-4 p {
+    font-size: 14px; } }

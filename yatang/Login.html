@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登陆</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css"> </head>
+
+<body>
+    <header>
+        <div class="w">
+            <div class="top">
+                <div class="top-logo"> <img src="img/logo.png" alt=""> </div>
+                <div class="top-right">
+                    <ul>
+                        <li><a href="index.html">返回首页</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">服务热线：4000-800-333</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="w">
+            <div class="left"> <img src="img/100011_20180307164329891.png" alt=""> </div>
+            <div class="right">
+                <div class="right1" style="margin-top:0;">
+                    <form id="sso_login" name="form1" method="post" action="/yluser">
+                        <input type="hidden" id="origin" name="origin" value="2">
+                        <input type="hidden" id="format" name="format" value="json">
+                        <input type="hidden" id="appKey" name="appKey" value="00002">
+                        <input type="hidden" id="v" name="v" value="1.0">
+                        <!-- pc -->
+                        <input type="hidden" id="source" name="source" value="1">
+                        <input type="hidden" id="synUrl" name="synUrl" value="https://www.yatang.cn/login.jsp?loginSuccessURL=">
+                        <div class="css-log-box">
+                            <div class="css-log-title">雅堂账号登录</div>
+                            <div class="css-log-warn js-warn">公共场所建议操作完及时退出，以防账号丢失</div>
+                            <div class="css-log-error js-error"></div>
+                            <div class="css-log-input css-name-bg">
+                                <input tabindex="1" type="text" name="name" value="" id="name" class="js-username" placeholder="用户名/手机号">
+                                <div id="js-clear" class="css-input-clear js-clear"></div>
+                            </div>
+                            <div class="css-log-input css-pwd-bg">
+                                <input tabindex="1" class="js-password" id="password" type="password" name="p" value="" placeholder="密码"> </div>
+                            <div class="css-option-box" style="margin-bottom:10px;">
+                                <div style="clear:both;"></div>
+                            </div>
+                            <div class="css-option-box">
+                                <div class="css-auto-log" style="float:left;"><span style="cursor: pointer;" id="regUmp" href="Login.html">立即注册</span></div>
+                                <div class="css-links" style="float:right;"> <span id="findPwdUmp" style="cursor: pointer;" findpwdurl="https://www.yatang.cn/myaccount/passwordReset.jsp">忘记密码&nbsp;</span> </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                            <div tabindex="1" id="js-login" class="css-log-btn js-login" style="outline:rgb(109,109,109) none 0px;" onclick="check()">登录</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="font-family:Microsoft YaHei;background: white;text-align: center;font-size: 12px;">
+        <div class="js-footer">
+            <div class="css-copyright-container"> © 2017 www.yatang.cn All rights reserved.<a>&nbsp;川B2-20170213</a> 雅堂电商&nbsp;<a>蜀ICP备16027647号-2</a> </div>
+        </div>
+    </div>
+    <script>
+        function check() {
+            var user_name = form1.name.value; //获取表单form1的用户名的值
+            var user_pwd = form1.password.value; //获取表单form1密码值
+            if ((user_name == "") || (user_name == null)) { //判断用户名是否为空，为空就弹出提示框"请输入用户名"，否则正常执行下面的代码。
+                alert("请输入用户名！");
+                form1.user.focus(); //获取焦点，即：鼠标自动定位到用户名输入框，等待用户输入用户名。
+                return; //函数的返回结果
+            }
+            else { //如果用户名、密码都正常输入，则提交表单，浏览器经打开新的（主页）窗口。
+                form1.submit(); //当提交表单显示警告框
+                // window.location.href="http://baidu.com/";
+                window.open("index.html");
+            }
+        }
+    </script>
+    <!-- JavaScript -->
+    <!--    <script src="js/main.min.js"></script>-->
+</body>
+
+</html>
