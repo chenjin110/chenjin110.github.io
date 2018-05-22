@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>六六课堂下载</title>
+		<script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);  flex(100, 1);</script>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/download.css" />
+	</head>
+	<body>
+		<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide one">
+	        	<img src="img/logo.png" alt="" class="dback4">
+	        	<div class="p_2">
+	        	    随时随地
+                </div>
+	           <div class="p_3">
+	        	    纵享投资
+	        	</div>
+	        	<img src="img/iphone.png" class="dback5"/>
+	        	<div class="download">立即打开</div>
+	        	<img src="img/aback61.png" class="dback6"/>
+	        </div>
+	        <div class="swiper-slide two">
+	        	<h2 class="p_1">智能荐股</h2>
+	        	<h2 class="p_3">听课猜股拿牛币</h2>
+	        	<img src="img/dback7.png" alt="" class="dback7">
+	        	<img src="img/aback61.png" class="two7"/>
+	        </div>
+	        <div class="swiper-slide three">
+	        	<h2 class="p_1">在线课堂</h2>
+	        	<h2 class="p_3">牛人理财在线看</h2>
+	        	<img src="img/dback8.png" alt="" class="dback8">
+	        	<img src="img/aback61.png" class="two7"/>
+	        </div>
+	        <div class="swiper-slide four">
+	        	<h2 class="p_1">财经资讯</h2>
+	        	<h2 class="p_3">最新热文全知道</h2>
+	        	<img src="img/dback9.png" alt="" class="dback9">
+	        </div>
+	    </div>
+
+</div>
+	</body>
+	<script type="text/javascript" src="h5app/js/jquery-1.9.0.min.js" ></script>
+	<script type="text/javascript" src="js/cut/swiper-3.4.1.jquery.min.js" ></script>
+	<script>
+	var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        loop: true, 
+    });    
+    
+    
+    $('.download').click(function() {
+			//判断ios/安卓
+			var u = navigator.userAgent;
+			// 安卓
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+			// IOS
+			var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+			if(isAndroid) { //android				
+				location.href = "trustexporter://sixcourse.android/path";//安卓协议
+				window.setTimeout(function() {
+					window.location.href ="https://images.mytzxx.com/66cls.apk" //下载链接
+				}, 1000);
+			};
+			if(isiOS) { //ios
+				location.href = "LiuliuCourseApp://";//ios协议
+				window.setTimeout(function() {
+					window.location.href ="https://itunes.apple.com/cn/app/id1282825401?mt=8";//下载链接
+				}, 1000)
+			};
+		})
+	</script>
+</html>

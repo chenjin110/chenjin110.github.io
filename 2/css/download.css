@@ -1,0 +1,310 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	border: 0 none;
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	max-height: 100000px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif,font-family:PingFang-SC-Medium;
+	line-height: 1;
+	color: #808080;
+	background-color: #FFFFFF;
+	font-size: 0.32rem;
+	text-align: justify;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	background: #fff;
+	/* Center slide text vertically */
+	/*display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;*/
+}
+
+.swiper-container .one{
+	background: url(../img/dback1.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+.dback2{
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+
+.swiper-container .one .p_2{
+  font-family:PingFang-SC-Medium;
+    font-size: 0.58rem;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    right: 63.5%;
+}
+
+.swiper-container .one .p_3{
+
+    font-size: 0.58rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 63.5%;
+}
+
+.dback4{
+	position: absolute;
+	display: block;
+	width: 29.1%;
+	left: 0;
+	top: 7.6%;
+}
+
+.dback5{
+	position: absolute;
+	margin: auto;
+	width: 57.4%;
+	left:39% ;
+	top: 17%;
+	z-index: 1;
+}
+
+.download{
+	position: absolute;
+	width: 48.3%;
+	height: 0.83rem;
+	left:26% ;
+	bottom: 8%;
+	z-index: 2;
+	background: #D2131C;
+	color: #FFFFFF;
+	line-height: 0.72rem;
+	font-size: 0.43rem;
+	border-radius:0.83rem ;
+}
+
+.dback6{
+	position: absolute;
+	width: 7.3%;
+	left:46.4% ;
+	bottom: 2.5%;
+	z-index: 2;
+}
+.dback7{
+    margin-top:12.2%;
+    width: 100%;
+}
+.dback8{
+    width: 100%;
+    margin-top: 0.25rem;
+}
+.dback9{
+    margin-top: 0.64rem;
+    
+}
+.two7{
+    margin-top: 0.29rem;
+    margin-bottom: 0.54rem;
+}
+.two8{
+    position: absolute;
+    bottom: 2.5%;
+    left: 46.4%;
+}
+.swiper-container .two{
+    background: rgb(57,47,55);
+}
+.swiper-container .two .p_1{
+	margin-top: 1rem;
+	color:#FF3938 ;
+	font-size: 0.76rem;
+	letter-spacing:0.02rem;
+}
+
+.swiper-container .two .p_3{
+	margin-top: 0.18rem;
+	color:#FEFEFE ;
+	font-size: 0.44rem;
+}
+
+
+.swiper-container .three{
+    background-image: url(../img/bg1.jpg);
+}
+.swiper-container .three .p_1{
+	margin-top: 1rem;
+	color:#FF3938 ;
+	font-size: 0.76rem;
+	letter-spacing:0.02rem;
+}
+
+.swiper-container .three .p_3{
+	margin-top: 0.18rem;
+	color:#FEFEFE ;
+	font-size: 0.44rem;
+}
+
+.three{
+	background: #FFFFF8;
+}
+
+.three_ce{
+	width: 65%;
+	height:1.2rem;
+	margin: auto;
+	margin-top: 0.56rem;
+	margin-left:17.5%;
+}
+
+.three_ce_c{
+	width: 33.33%;
+	float: left;
+	height: 100%;
+}
+
+.three_ce_c img{
+	margin: auto;
+}
+
+.three4{
+	display: block;
+	float: right;
+	width: 86%;
+	margin-top: 0.34rem;
+}
+
+.three5{
+	position: absolute;
+	width: 8%;
+	left:46% ;
+	bottom: 2.5%;
+	z-index: 2;
+}
+
+.swiper-container .four{
+    background-image: url(../img/bg2.jpg);
+}
+.swiper-container .four .p_1{
+	margin-top: 1rem;
+	color:#FF3938 ;
+	font-size: 0.71rem;
+	letter-spacing:0.02rem;
+}
+
+.swiper-container .four .p_3{
+	margin-top: 0.18rem;
+	color:#616161;
+	font-size: 0.42rem;
+}
+.four1{	
+	display: block;
+	width: 41%;
+	margin: auto;
+	margin-top: 20%;
+}
+
+.four2{
+	position: absolute;
+	width: 55%;
+	left: 22.5%;
+	bottom: 0;
+}
