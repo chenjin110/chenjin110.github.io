@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+	background-size: 100%;
+}
+.container{
+	background: #fff;
+	opacity: 0.4;
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+}
+img{
+	width: 90%;
+	display: block;
+	margin: auto;
+	padding-top:0.4rem;
+	padding-bottom:0.4rem;
+}

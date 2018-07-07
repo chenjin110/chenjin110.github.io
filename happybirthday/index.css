@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(img/1.GIF);
+	background-size: 100%;
+}
+ul{
+	margin-top: 0.3rem;
+	overflow:hidden ;
+	
+}
+ul li{
+	font-weight: bold;
+	color: red;
+	float: left;
+	list-style: none;
+	width: 25%;
+	font-size: 0.5rem;
+	text-align: center;
+	margin: 0 auto;
+}
+li a{
+	color: red;
+		width: 100%;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+	display: block;
+}
+.img{
+
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	
+}
+.w p{
+	color: white;
+	font-size: 0.4rem;
+	text-align: center;
+}
