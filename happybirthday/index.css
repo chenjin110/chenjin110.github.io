@@ -4,10 +4,7 @@
 	box-sizing: border-box;
 }
 
-body{
-	background-image: url(img/1.GIF);
-	background-size: 100%;
-}
+
 ul{
 	margin-top: 0.3rem;
 	overflow:hidden ;
